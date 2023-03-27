@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <header>
+                <h1>글 작성하기</h1>
+            </header>
+        </tr>
+        <tr>
+            <td><span><b>작성자</b></td>
+            <td></span><input type="text" name="name" id="name"></td>
+        </tr>
+        <tr>
+            <td><span><b>아이디</b> </span></td>
+            <td><input type="text" name="id" id="id"></td>
+        </tr>
+        <tr>
+            <td><span><b>이메일</b></td>
+            <td></span><input type="text" name="fristemail" id="fristemail"></td>
+            <td><span>@</span></td>
+            <td><select name="email" id="email">
+                    <option value="naver">naver.com</option>
+                    <option value="gmail">gmail.com</option>
+                    <option value="kakao">kakao.com</option>
+                    <option value="daum">daum.net</option>
+            </td>
+            </select>
+        </tr>
+
+        <tr>
+
+            <td><span><b>휴대폰</b></span></td>
+            <td>
+                <select name="number" id="number">
+                    <option value="010">010</option>
+                    <option value="011">011</option>
+                    <option value="016">016</option>
+                </select>
+            </td>
+            <td><span><b>-</b></span></td>
+            <td><input type="text" name="midnumber" id="midnumber"></td>
+            <td><span><b>-</b></span></td>
+            <td><input type="text" name="lasternumber" id="lasternumber"></td>
+        </tr>
+        <tr>
+            <td><span><b>글제목</b></span></td>
+            <td><input type="text" name="headline" id="headline"></td>
+        </tr>
+        <tr>
+            <td><span><b>내용</b></span></td>
+            <td><textarea name="bonmoon" id="bonmoon" cols="30" rows="10"></textarea>
+        </tr>
+        <td><input type="submit" value="제출"></td>
+    </table>
+</body>
+
+</html>
