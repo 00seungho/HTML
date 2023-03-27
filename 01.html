@@ -7,11 +7,44 @@
     <title>Document</title>
 </head>
 <body>
-    <select>
-        <optgroup>
-            html
-            <option value="abc">아아아</option>
+    <h4>점심메뉴</h4>
+<form action="result.html">
+<select name="food1">
+    <option value="f1">김밥</option>
+    <option value="f2">치즈김밥</option>
+    <option value="f3">소고기김밥</option>
+    <option value="f4">라면</option>
+    <option value="f5">만두라면</option>
+    <option value="f6">치즈라면</option>
+    <option value="f7">라볶이</option>
+   </select>    
+   <br>
+   <select name="food2" multiple="multiple">
+    <option value="d1">제로콜라</option>
+    <option value="d2">콜라</option>
+    <option value="d3">사이다</option>
+    <option value="d4">오렌지주스</option>
+   </select>
+   <br>
+   <select name="food3">
+        <optgroup label="음식">
+            <option value="f1">김밥</option>
+            <option value="f2">치즈김밥</option>
+            <option value="f3">소고기김밥</option>
+            <option value="f4">라면</option>
+            <option value="f5">만두라면</option>
+            <option value="f6">치즈라면</option>
+            <option value="f7">라볶이</option>
+        </optgroup>
+        <optgroup label="음료">
+            <option value="d1">제로콜라</option>
+            <option value="d2">콜라</option>
+            <option value="d3">사이다</option>
+            <option value="d4">오렌지주스</option>
         </optgroup>
     </select>
+    <br>
+    <button type="submit">전송</button>
+</form>
 </body>
 </html>
