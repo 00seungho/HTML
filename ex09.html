@@ -9,25 +9,26 @@
 </head>
 
 <body>
-    <table>
-        <tr>
-            <header>
+    <table border="1">
+        <tr align="left">
+
+            <th>
                 <h1>글 작성하기</h1>
-            </header>
+            </th>
+
+
         </tr>
         <tr>
-            <td><span><b>작성자</b></td>
-            <td></span><input type="text" name="name" id="name"></td>
+            <td colspan="2"><label for="name"><b>작성자</b></label> <input type="text" name="name" id="name"></td>
+
         </tr>
         <tr>
-            <td><span><b>아이디</b> </span></td>
-            <td><input type="text" name="id" id="id"></td>
+            <td colspan="2"><label for="id"><b>아이디</b> <input type="text" name="id" id="id"> </label></td>
         </tr>
         <tr>
-            <td><span><b>이메일</b></td>
-            <td></span><input type="text" name="fristemail" id="fristemail"></td>
-            <td><span>@</span></td>
-            <td><select name="email" id="email">
+            <td colspan="3"><label for="fristemail"><b>이메일</b></label>
+                </span><input type="text" name="fristemail" id="fristemail">
+                @<select name="email" id="email">
                     <option value="naver">naver.com</option>
                     <option value="gmail">gmail.com</option>
                     <option value="kakao">kakao.com</option>
@@ -36,31 +37,34 @@
             </select>
         </tr>
 
+
         <tr>
 
-            <td><span><b>휴대폰</b></span></td>
-            <td>
+            <td colspan="5"><label for="midnumber"><b>휴대폰</b></label>
+
                 <select name="number" id="number">
                     <option value="010">010</option>
                     <option value="011">011</option>
                     <option value="016">016</option>
                 </select>
+                <span><b>-</b></span>
+                <input type="text" name="midnumber" id="midnumber"><b> - </b>
+                <input type="text" name="lasternumber" id="lasternumber">
             </td>
-            <td><span><b>-</b></span></td>
-            <td><input type="text" name="midnumber" id="midnumber"></td>
-            <td><span><b>-</b></span></td>
-            <td><input type="text" name="lasternumber" id="lasternumber"></td>
         </tr>
         <tr>
-            <td><span><b>글제목</b></span></td>
-            <td><input type="text" name="headline" id="headline"></td>
+            <td><label for="headline"><b>글제목</b></label>
+                <input type="text" name="headline" id="headline">
+            </td>
         </tr>
         <tr>
-            <td><span><b>내용</b></span></td>
-            <td><textarea name="bonmoon" id="bonmoon" cols="30" rows="10"></textarea>
+            <td><label for="bonmoon"><b>내용</b></label>
+
+            <textarea name="bonmoon" id="bonmoon" cols="30" rows="10"></textarea></td>
         </tr>
         <tr>
-            <td colspan="3">
+
+            <td>
                 <input type="submit" value="제출">
             </td>
         </tr>
