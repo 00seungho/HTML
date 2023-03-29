@@ -1,74 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
     <table>
-        <tr align="left">
-
-            <th>
-                <h1>글 작성하기</h1>
-            </th>
-
-
+        <tr>
+            <th align="left" colspan="2"><h1>글 작성하기</h1></th>
         </tr>
         <tr>
-            <td colspan="2"><label for="name"><b>작성자</b></label> <input type="text" name="name" id="name"></td>
-
+            <td><label for="name">작성자</label></td>
+            <td><input type="text" name="name" id="name"></td>
         </tr>
         <tr>
-            <td colspan="2"><label for="id"><b>아이디</b> <input type="text" name="id" id="id"> </label></td>
+            <td><label for="id">아이디</label></td>
+            <td><input type="text" name="id" id="id"></td>
         </tr>
         <tr>
-            <td colspan="3"><label for="fristemail"><b>이메일</b></label>
-                </span><input type="text" name="fristemail" id="fristemail">
-                @<select name="email" id="email">
+            <td><label for="email">이메일</label></td>
+            <td><input type="text" name="email" id="email">@
+                <select name="lastemail" id="lastemail">
                     <option value="naver">naver.com</option>
                     <option value="gmail">gmail.com</option>
-                    <option value="kakao">kakao.com</option>
                     <option value="daum">daum.net</option>
-            </td>
-            </select>
-        </tr>
-
-
-        <tr>
-
-            <td colspan="5"><label for="midnumber"><b>휴대폰</b></label>
-
-                <select name="number" id="number">
-                    <option value="010">010</option>
-                    <option value="011">011</option>
-                    <option value="016">016</option>
+                    <option value="kakao">kakao.com</option>
                 </select>
-                <span><b>-</b></span>
-                <input type="text" name="midnumber" id="midnumber"><b> - </b>
-                <input type="text" name="lasternumber" id="lasternumber">
             </td>
         </tr>
         <tr>
-            <td><label for="headline"><b>글제목</b></label>
-                <input type="text" name="headline" id="headline">
-            </td>
+            <td><label for="midnumber">휴대폰</label></td>
+            <td colspan="2">
+                <select name="number" id="number">
+                <option value="010">010</option>
+                <option value="011">011</option>
+                <option value="016">016</option>
+                <option value="02">02</option>
+                </select>
+                <span>-</span>
+                <input type="text" name="midnumber" id="midnumber">
+                <span>-</span>
+                <input type="text" name="lastnumber" id="lastnumber">
+        </td>
         </tr>
         <tr>
-            <td><label for="bonmoon"><b>내용</b></label>
-
-            <textarea name="bonmoon" id="bonmoon" cols="30" rows="10"></textarea></td>
+            <td><label for="headline">글제목</label></td>
+            <td><input type="text" name="headline" id="headline"></td>
         </tr>
         <tr>
-
-            <td>
-                <input type="submit" value="제출">
-            </td>
+            <td align="center"><label for="bonmoon">내용</label></td>
+            <td><textarea name="bonmoon" id="bonmoon" cols="30" rows="10"></textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="제출"></td>
         </tr>
     </table>
 </body>
-
 </html>
