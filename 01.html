@@ -6,18 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <style>
-.font_big{
-
-}
 .font_famlliy{
-
+    font-family: initial;
 }
 .font_size{
-    
+    font-size: 2em;
 }
+.font_bold{
+    font-weight: bold;
+}
+.text_center{
+    text-align: center;
+}
+
+.buttom{
+    width: 150px;
+    height: 50;
+    background-color: aqua;
+    border: 10px solid chartreuse;
+    border-radius: 30px;
+    /* box-shadow: ; 그림자 효과 */
+     box-shadow: 5px 5px 5px gray;
+}
+.buttom > a{
+    display: block;
+    text-decoration: none;
+}
+
 </style>
 </head>
 <body>
-    <input type="button" value="안녕">
+    <div class="buttom">
+        <a href="#" class="font_bold font_famlliy font_size text_center">CLICK</a>
+    </div>
 </body>
 </html>                     
