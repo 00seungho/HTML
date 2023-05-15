@@ -6,19 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        var cylinderType ={
+            var cylinderType ={
             radius :5,
             height : 12,
             underside : function(radius){
                 return radius * radius * Math.PI;
             }       
         }
+
+        var input = prompt("원의 반지름 입력","입력");
+        cylinderType.radius = parseInt(input);        
+        input = prompt("기둥의 높이 입력","입력");
+        cylinderType.height = parseInt(input);        
+
        
         function cylinder(cylinderType){
             return cylinderType.underside(cylinderType.radius) * cylinderType.height;
         }
         
-        alert(cylinder(cylinderType)); 
+        alert("부피는 "+cylinder(cylinderType)+"㎤"); 
     </script>
 </head>
 <body>
