@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeImageApple(){
+            var img1 = document.getElementById("imgFruit")
+            img1.src = "imgs/apple.jpg"
+        }
+        function changeImageKiwi(){
+            var img1 = document.getElementById("imgFruit")
+            img1.src = "imgs/kiwi.jpg"
+        }
+        function changeImageOrange(){
+            var img1 = document.getElementById("imgFruit")
+            img1.src = "imgs/orange.jpg"
+        }
+        function changeImagePear(){
+            var img1 = document.getElementById("imgFruit")
+            img1.src = "imgs/pear.jpg"
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <input type="radio" name="fruit" id="apple" onclick="changeImageApple()"> <label for="apple">APPLE</label>
+        <input type="radio" name="fruit" id="kiwi" onclick="changeImageKiwi()"> <label for="kiwi">KIWI</label>
+        <input type="radio" name="fruit" id="orange"onclick="changeImageOrange()"> <label for="orange">ORANGE</label>
+        <input type="radio" name="fruit" id="pear"onclick="changeImagePear()"> <label for="pear">PEAR</label>
+        <button id = "btn" onclick="changeImage()" type="button">과일선택</button>
+        <br>
+        <img src="" id="imgFruit">
+    </form>
+</body>
+</html>
