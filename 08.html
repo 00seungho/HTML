@@ -6,22 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function bgColorSwerp(){
-           bodytag = document.body.style;
-           if(bodytag.background == "green"){
-            bodytag.background = "yellow";
-           }    
-           else{
-            bodytag.background ="green";
-           }
-
+        window.onload = function(event){
+            alert(event);
         }
     </script>
 </head>
-<body onload="time()">
-<h1>누르면 배경색이 바뀜</h1>
-<button onclick="bgColorSwerp()">바꿔</button>
-
-
+<body>
+    
 </body>
 </html>
