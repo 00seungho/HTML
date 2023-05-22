@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function bgColorSwerp(){
+           bodytag = document.body.style;
+           if(bodytag.background == "green"){
+            bodytag.background = "yellow";
+           }    
+           else{
+            bodytag.background ="green";
+           }
+
+        }
+    </script>
+</head>
+<body onload="time()">
+<h1>누르면 배경색이 바뀜</h1>
+<button onclick="bgColorSwerp()">바꿔</button>
+
+
+</body>
+</html>
