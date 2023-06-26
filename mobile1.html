@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>베스트셀러</title>
+    <style>
+        /*공통 설정*/
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+        }
+        a{
+            text-decoration: none;
+        }
+        img {
+            border:0;
+        }
+        li{
+            list-style: none;
+        }
+        .container{
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        /*공통 설정*/
+
+        /*헤더 부분*/
+        #main-header{
+            padding: 10px 5px;
+        }
+        #main-header h1{
+            font-size: 20px;
+            font-weight: normal;
+            line-height: 27px;
+            color: #222;
+        }
+        #main-header ul{
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        #main-header li{
+            margin-top:10px;
+            margin-bottom: 10px;
+        }        
+        #main-header a{
+            color: black;
+            font-weight: 500;
+        }
+        #main-header li.active a{
+            color:black;
+            font-weight: 500;
+        }
+        #main-header label{
+            text-align: center;
+            float: right;
+            width: 40px;
+            height: 27px;
+            line-height: 27px;
+            color: #222;
+            border: solid 1px #222;
+            border-radius: 5px;
+        }
+        #checkbox + nav{
+            display: block;
+        }
+        #checkbox:checked + nav{
+            display: none;
+        }
+        /*헤더 부분*/
+        
+        /*본문 부분*/
+        #main-content{
+            background: #00afa0;
+            padding: 40px 15px 30px;
+        }
+        #main-content h1{
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+            font-weight: 500;
+        }
+        #main-content p{
+            color: #222;
+            text-align: center;
+            color: white;
+        }
+        #sub-content{
+            padding-top:30px;
+        }
+        #sub-content h1{
+            text-align: center;
+            color: #333;
+        }
+        #sub-content h2{
+            text-align: center;
+            color: #333;
+            font-size: 17px;
+        }
+        #sub-content p{
+            color: #555;
+        }
+        #sub-content img{
+            width: 200px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        /*본문 부분*/
+
+        /*푸터 부분*/
+        #main-footer{
+            padding-top:40px;
+        }
+        footer{
+            background-color: #323232;
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            line-height: 40px;
+        }
+        /*푸터 부분*/
+    </style>
+</head>
+<body>
+    <!--헤더 부분-->
+    <div id="main-header">
+       <header class="container">
+        <div>
+            <label for="checkbox">▼</label>
+            <h1>베스트셀러 도서</h1>
+        </div>
+        <input type="checkbox" id="checkbox", checked>        <nav>
+            <ul>
+                <li><a href="#">Brand</a></li>
+                <li class="active"><a href="#"></a>Network</li>
+                <li><a href="#"></a>Store</li>
+                <li><a href="#"></a>Support</li>
+            </ul>
+        </nav>
+       </header>
+    </div>
+    <!--헤더 부분-->
+    <div id="main-content">
+        <article class="container">
+            <h1>Ullamco labore excepteur qui esse mollit ut.</h1>
+            <p>Voluptate magna Lorem proident incididunt magna ut sit culpa.
+                Culpa duis ut ullamco anim in.
+                Mollit amet in Lorem enim occaecat excepteur irure sint dolor deserunt occaecat ut velit in.
+                Non irure deserunt elit do culpa mollit sit sint proident fugiat ullamco reprehenderit magna.
+                Quis eiusmod proident laborum elit reprehenderit aute esse elit ut.
+                Enim magna ullamco adipisicing in nostrud.
+                Aute sit veniam deserunt non mollit cupidatat ex.
+                Ullamco sit enim consectetur est ut in qui incididunt amet Lorem esse duis pariatur id.
+                Non est eu ut excepteur eiusmod non anim mollit fugiat ut laborum nisi qui.Sunt officia ad culpa commodo esse officia.
+                Magna adipisicing sint aute veniam dolor aute.
+                Laboris occaecat aliquip velit ea.
+                Nostrud voluptate veniam irure dolor sunt et mollit consectetur cupidatat deserunt nisi velit.
+                Labore incididunt eu non sunt et exercitation.
+            </p>
+        </article>
+        <div id="sub-content">
+            <article class="sub-container">
+                <h1>한문철 변호사의 교통사고 100% 보상받기</h1>
+                <h2>교통사고 피해보상 전문변호사인 한문철 변호사가 지난 10년간 현장에서 소송을 담당해온 경험과 데이터를 중심으로 일목요연하게 지침을 밝힌 교통사고 피해보상에 관한 책이다.</h2>
+                <img src="imgs/onedooriron.jpg">
+                <p>교통사고 피해보상 전문변호사인 한문철 변호사가 지난 10년간 현장에서 소송을 담당해온 경험과 데이터를 중심으로 일목요연하게 지침을 밝힌 교통사고 피해보상에 관한 책이다. 
+                    통사고 피해보상에 있어서 가벼운 접촉사고부터 사망사고까지를 사고접수부터 합의/보상에 이르기까지 사고처리 순서별로 모든 것을 망라하고 있다. 
+                    특히 교통사고 전문 변호사로서 지난 10년간 교통사고 피해보상을 통해 당사자들의 권리를 찾아주고 있는 한문철 변호사가 소송 현장경험을 바탕으로 한 방대한 데이터를 근거로 저술했기 때문에 그 내용에 대한 신뢰도가 높다는 장점이 있다.
+                </p>
+                <br>
+                <h1>1분 요리 뚝딱이형</h1>
+                <h2>233만 구독자가 선택한 맛보장 레시피 베스트 100</h2>
+                <img src="imgs/tooktak.jpg">
+                <p>1972만명이 인정한 마늘보쌈 레시피 창시자!
+                    구독자 233만 명의 요리 유튜버 뚝딱이형의 첫 번째 요리책
+                    요리는 어렵지 않아, 뚝딱!
+                    요알못을 구제해 줄 단 하나의 요리책
+                    느슨해진 요리 유튜브 계에 혜성처럼 나타나 강렬한 긴장감을 선사하는 그는 바로 ‘뚝딱이형’. 뚝딱이형은 수많은 요리 유튜버 중에서도 유독 폭발적인 성장을 하는 중이다. 
+                    그는 ‘요리는 쉽고 간편해야 하며 누구나 맛있게 만들 수 있어야 한다’고 강조한다. 그렇기에 완벽한 맛, 쉽고 간편한 레시피를 만들기 위해 밤을 새워 연구하고 이를 아낌없이 공개한다. 
+                    그의 폭발적인 인기는 바로 이런 요리에 대한 진심이 전달되었기 때문일지도 모른다.
+                    항상 진심을 다해 레시피를 연구하는 그가 따라 하면 무조건 실패 없는 맛보장 레시피 100개를 소개한다. 
+                    줄 서서 먹는 유명 맛집의 맛을 그대로 재현했으며 어려워 보이는 요리도 초보자가 하기 쉽도록 만들었다. 
+                    평범하고 흔한 요리도 뚝딱이형의 팁만 있다면 더 특별하고 더 맛있게 만들 수 있다. 
+                    실제로 뚝딱이형의 레시피를 따라 하면 절대 실패가 없고 맛집과 똑같다는 인증 댓글이 쏟아지고 있다.
+                    출간 소식을 전하자마자 구독자들의 폭발적인 응원과 지지가 이어지고 있다. 
+                    뚝딱이형은 이에 보답하기 위해 책임감과 사명감을 가지고 ‘이 책이 냄비 받침으로 전락하지 않고 유용한 책이 되도록’ 피나는 노력과 정성으로 만들었다. 
+                    이 책만 있으면 평생 쓸 수 있는 레시피를 배우게 될 것이다.
+                </p>
+            </article>
+    </div>  
+    <div id="main-footer">
+        <footer class="container">
+            <div>Ⓒ2023.06.23 Moblie Project Test. All rights reserved.</div>
+        </footer>
+    </div>
+</body>
+</html>
