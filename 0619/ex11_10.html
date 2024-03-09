@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #botton{
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            color: white;
+            background-color: teal;
+            border-radius: 10px;
+            border: none;
+        }
+    </style>
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+</head>
+<body>
+    <div id="botton">클릭</div>
+    <script>
+        var color = ['red','green','blue']
+        var currentColor = 0;
+        cheange_color();
+            $('#botton').click(function(){
+                switch(currentColor){
+                    case 0: currentColor +=1;
+                        break;
+                    case 1:currentColor +=1;
+                    break;
+                    case 2:currentColor +=1;
+                    break;
+                    case 3:currentColor =0;
+                    break;                    
+                }
+                cheange_color();
+            })
+            function cheange_color(){
+                $('#botton').css({ 
+                backgroundColor: color[currentColor]
+            })
+            }
+    </script>
+</body>
+</html>
