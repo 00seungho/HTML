@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            var size = 0;
+            $("div").hover(function(){
+                $("div:nth-child(1)").animate({
+                    backgroundColor: "yellow",
+                    color:"black",
+                    marginLeft:"+10000"
+                },2000);
+
+            },
+            function(){
+                $("div:nth-child(1)").css({
+                    backgroundColor:"",
+                    color: "",
+                    marginLeft: 0
+                });
+            }
+            )
+        });
+    </script>
+</head>
+<body>
+    <div id="a" style="width: 360px; margin: 0;">
+    <h1> .　 .....::::::･''･::::::.... <br>
+        ::　　　　　　　　:: <br>
+      :　　원　 기　 옥　　: <br>
+       ::　　　　　　　　 :: <br>
+      　　'''::::::･,,･::::::''' 
+    </h1>
+    </div>
+    <div style="width: 360px;">
+    <h1>
+      　  　∩∧_∧∩ <br>
+      　　　(　･ω･) <br> 
+      　　 　/　　ﾉ <br>
+      　　　しーU <br>
+      </h1>
+    </div>
+</body>
+</html>
